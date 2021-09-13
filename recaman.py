@@ -15,7 +15,8 @@ current = 0
 
 for step in range(200):
     sign = 1
-    joe.pencolor("black")
+    c = np.random.randint(low=0, high=255, size = 3)
+    joe.pencolor((c[0], c[1], c[2]))
     
     if current - step > 0 and current - step not in seen:
         sign = -1
@@ -36,7 +37,8 @@ current = 0
 
 for step in range(200):
     sign = 1
-    joe.pencolor("black")
+    c = np.random.randint(low=0, high=255, size = 3)
+    joe.pencolor((c[0], c[1], c[2]))
 
     if current - step > 0 and current - step not in seen:
         sign = -1
