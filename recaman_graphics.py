@@ -1,7 +1,11 @@
 from graphics import GraphWin, update, Circle, Point
 
+outline = 'antiquewhite1'
+background = 'lightskyblue'
+
 win = GraphWin("Recamán – Click Anywhere to Close", 1400, 800, autoflush=False)
 win.setCoords(-win.getWidth()/2,-win.getHeight()/2,win.getWidth()/2,win.getHeight()/2)
+win.setBackground(background)
 
 seen = set()
 current = 0
@@ -17,10 +21,12 @@ for step in range (500):
 
 	#right side
 	c = Circle(Point(scale*(2*current+sign*step)/2 , 0), scale*step/2)
+	c.setOutline(outline)
 	c.draw(win)
 
 	#left side
 	c = Circle(Point(-scale*(2*current+sign*step)/2 , 0), scale*step/2)
+	c.setOutline(outline)
 	c.draw(win)
 
 	#update current
