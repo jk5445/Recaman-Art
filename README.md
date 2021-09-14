@@ -1,4 +1,4 @@
-# Recaman Art
+# Python Art
 In this project I will introduce myself to some Python graphics tools using the recaman sequence. Hello world of mathematical art!
 
 ## Recaman Sequence
@@ -31,4 +31,5 @@ Semi-cirlces begin from the endpoint of the previous semi-circle, a[n-1], and en
 ## rot_triangles.py
 Implemented with Python's graphics package.
 
-Draws a cyan triangle over a magenta background.
+### Usage
+Draws random traingles. Click to create a new triangle with a random color, rotational direction and speed, and size centered around the coordinates of your mouse click. Press *q* to quit
